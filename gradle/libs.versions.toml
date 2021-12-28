@@ -1,0 +1,23 @@
+[versions]
+quarkus = "2.6.1.Final"
+indra = "2.0.6"
+
+checker-qual = "3.21.0"
+immutables = "2.9.0-rc1"
+
+[libraries]
+quarkus-universe-bom = { module = "io.quarkus:quarkus-universe-bom", version.ref = "quarkus" }
+quarkus-arc = { module = "io.quarkus:quarkus-arc" }
+quarkus-resteasy = { module = "io.quarkus:quarkus-resteasy" }
+quarkus-resteasy-jackson = { module = "io.quarkus:quarkus-resteasy-jackson" }
+quarkus-junit5 = { module = "io.quarkus:quarkus-junit5" }
+restassured = { module = "io.rest-assured:rest-assured" }
+
+checker-qual = { module = "org.checkerframework:checker-qual", version.ref = "checker-qual" }
+immutables = { module = "org.immutables:value", version.ref = "immutables" }
+
+[bundles]
+
+[plugins]
+quarkus = { id = "io.quarkus", version.ref = "quarkus" }
+indra = { id = "net.kyori.indra", version.ref = "indra" }
